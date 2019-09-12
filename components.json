@@ -1,0 +1,12 @@
+{
+    "packages": [
+        {
+            "name": "helloWorld",
+            "author": "YangWei"
+        },
+        {
+            "name": "switch",
+            "author": "YangWei"
+        }
+    ]
+}
