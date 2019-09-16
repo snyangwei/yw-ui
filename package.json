@@ -5,6 +5,11 @@
   "author": "snyangwei <yw_0721@163.com>",
   "license": "MIT",
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "README.md",
+    "package.json"
+  ],
   "private": false,
   "scripts": {
     "dev": "npm run dev:example",

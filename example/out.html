@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>yw-ui</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../lib/theme/index.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../lib/theme/switch.css" />
+  </head>
+  <body>
+    <div id="app">
+      <yw-hello-world :color="color" :msg="msg"></yw-hello-world>
+      <yw-switch v-model="lightSwitch">开关:</yw-switch>
+    </div>
+  </body>
+  <script src="../node_modules/vue/dist/vue.js"></script>
+  <!-- <script src="../lib/switch.js"></script> -->
+  <!-- <script src="../lib/helloWorld.js"></script> -->
+  <script src="../lib/index.js"></script>
+  <script>  
+    console.log(window['yw-ui']);
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          color: 'red',
+          msg: 'hello world!',
+          lightSwitch: false
+        }
+      }
+    })
+    </script>
+</html>
+
+

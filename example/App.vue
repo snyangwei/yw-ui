@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <yw-hello-world :color="color" :msg="msg"></yw-hello-world>
+    <yw-switch
+    v-model="lightSwitch">开关:</yw-switch>
     <img src="./assets/logo.png">
     <router-view/>
   </div>
@@ -7,7 +10,14 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data() {
+    return {
+      color: 'blue',
+      msg: 'hello world',
+      lightSwitch: false
+    }
+  }
 }
 </script>
 

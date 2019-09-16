@@ -1,5 +1,6 @@
 <template>
   <div class="switch">
+    <div class="title">less测试</div>
     <span><slot></slot></span>
 
     <div :class="[{closed: !checked}, 'switch-box']"
@@ -19,7 +20,7 @@
 
 <script>
 export default {
-  name: 'Switch',
+  name: 'ywSwitch',
   data () {
     return {}
   },
@@ -54,9 +55,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .switch {
   display: inline-block;
+  .title {
+    color: #000;
+    font-size: 20px;
+  }
 }
 
 .switch > span,

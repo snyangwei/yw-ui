@@ -17,7 +17,8 @@ const env = require('../config/prod.env')
 const { packages } = require('../components.json')
 const entrys = {}
 packages.forEach(item => {
-    entrys[item.name] = './src/packages/' + item.name
+    let name = item.name.replace(/([A-Z])/g, "-$1").toLowerCase();
+    entrys['yw-' + name] = './src/packages/' + item.name
 })
 
 entrys.index = './src/index.js';

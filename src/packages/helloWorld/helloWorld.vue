@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'ywHelloWorld',
   props: {
     color: {
       type: String,

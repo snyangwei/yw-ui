@@ -6,6 +6,11 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import YwUI from '../lib/index.js'
+import '../lib/theme/index.css'
+Vue.use(YwUI)
+console.log(YwUI.version);
+ 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
