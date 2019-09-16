@@ -1,0 +1,50 @@
+
+.switch[data-v-28306e84] {
+  display: inline-block;
+}
+.switch .title[data-v-28306e84] {
+  color: #000;
+  font-size: 20px;
+}
+.switch > span[data-v-28306e84],
+.switch > div[data-v-28306e84] {
+  float: left;
+}
+.switch input[data-v-28306e84] {
+  display: none;
+}
+.switch-box[data-v-28306e84] {
+  width: 40px;
+  height: 20px;
+  background-color: #13ce66;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  margin-left: 6px;
+}
+.switch-box.closed[data-v-28306e84] {
+  background-color: #ff4949;
+}
+.switch-box span[data-v-28306e84] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  left: 22px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+.switch-box span.closed[data-v-28306e84] {
+  left: 2px;
+}
