@@ -20,8 +20,8 @@ packages.forEach(item => {
     let name = item.name.replace(/([A-Z])/g, "-$1").toLowerCase();
     entrys['yw-' + name] = './src/packages/' + item.name
 })
-
 entrys.index = './src/index.js';
+
 const webpackConfig = merge(baseWebpackConfig, {
   entry: entrys,
   module: {
