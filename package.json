@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "npm run dev:example",
     "lint": "eslint --ext .js,.vue src",
-    "build": "npm run build:example && npm run build:lib",
+    "build": "npm run build:lib && npm run build:example",
     "dev:example": "webpack-dev-server --inline --progress --config build/webpack.example.dev.conf.js",
     "build:example": "node build/example.build.js",
     "build:lib": "node build/lab.build.js"

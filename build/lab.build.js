@@ -14,11 +14,14 @@ const webpackConfig = require('./webpack.lab.prod.conf')
 const spinner = ora('building for production...')
 spinner.start()
 
-rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
+rm(path.join(config.build.assetsLibRoot, config.build.assetsSubDirectory), err => {
+  console.log('88888888-----');
   if (err) throw err
   webpack(webpackConfig, (err, stats) => {
+    console.log('888-webpack---');
     spinner.stop()
     if (err) throw err
+    console.log('888-webpack---2');
     process.stdout.write(stats.toString({
       colors: true,
       modules: false,
